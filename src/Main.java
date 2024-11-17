@@ -1,71 +1,95 @@
 public class Main {
     public static void main(String[] args) {
-        // Циклы
-        // Циклы Часть 1
-        // Задание 1
+        // Домашее задание 2
+        // Задача 1
         System.out.println("Задание 1");
-        for (int i = 1; i <= 10; i = i + 1) {
-            System.out.print(i + " ");
+        int savings = 2_459_000;
+        int amount3 = 15_000;
+        int sum3 = 0;
+        int month2 = 0;
+        while (sum3 <= savings) {
+            month2 = month2 + 1;
+            sum3 = amount3 * month2;
+            System.out.println("Месяц " + month2 + " ,сумма накоплений равна " + sum3 + " рублей");
         }
-        System.out.println();
-
         // Задание 2
         System.out.println("Задание 2");
-        for (int i = 10; i >= 1; i = i - 1) {
-            System.out.print(i + " ");
+        int b = 0;
+        while (b < 10) {
+            b++;
+            System.out.print(b + " ");
+        }
+        System.out.println();
+        for (; b >= 1; b--) {
+            System.out.print(b + " ");
         }
         System.out.println();
         // Задание 3
         System.out.println("Задание 3");
-        for (int i = 0; i < 17; i = i + 1) {
-            if (i % 2 == 0)
-                System.out.print(i + " ");
+        int population = 12_000_000;
+        int onethousandBirths = 17;
+        int mortalityperThousand = 8;
+        int currentYear = 2024;
+        for (int yaer = currentYear; yaer < currentYear + 10; yaer++) {
+            population += population * onethousandBirths / 1_000 - population * mortalityperThousand / 1_000;
+            System.out.println("Год " + yaer + ", численность населения составляет " + population);
         }
-        System.out.println();
         // Задание 4
         System.out.println("Задание 4");
-        for (int i = 10; i >= -10; i = i - 1) {
-            System.out.print(i + " ");
+        int savings1 = 12_000_000;
+        int amount4 = 15_000;
+        int sum4 = amount4;
+        int month3 = 0;
+        double percent1 = 0.07;
+        while (sum4 <= savings1) {
+            sum4 = (int) (sum4 * (1 + percent1));
+            month3++;
+            System.out.println("Месяц " + month3 + " ,сумма накоплений равна " + sum4 + " рублей");
         }
-        System.out.println();
         // Задание 5
-        System.out.println("Задание 5");
-        for (int year = 1904; year < 2096; year = year + 4) {
-            System.out.println(year + " год является високосным");
+
+        int savings2 = 12_000_000;
+        int amount5 = 15_000;
+        int sum5 = amount5;
+        int month4 = 0;
+        double percent2 = 0.07;
+        while (sum5 <= savings2) {
+            sum5 = (int) (sum5 * (1 + percent2));
+            month4 = month4 + 1;
+            if (month4 % 6 == 0) {
+                System.out.println("Месяц " + month4 + " ,сумма накоплений равна " + sum5 + " рублей");
+            }
         }
         // Задание 6
         System.out.println("Задание 6");
-        for (int i = 7; i <= 98; i = i + 7) {
-            System.out.print(i + " ");
+        amount5 = 15_000;
+        sum5 = amount5;
+        month4 = 0;
+        int months = 12 * 9;
+        percent2 = 0.07;
+        while (month4 <= months) {
+            sum5 = (int) (sum5 * (1 + percent2));
+            month4++;
+            if (month4 % 6 == 0) {
+                System.out.println("Месяц " + month4 + " ,сумма накоплений равна " + sum5 + " рублей");
+            }
         }
-        System.out.println();
         // Задание 7
         System.out.println("Задание 7");
-        for (int i = 1; i <= 512; i = i * 2) {
-            System.out.print(i + " ");
+        int firstFriday = 1;
+        for (int day = firstFriday; day < 31; day += 7) {
+            System.out.println("Сегодня пятница " + day + " -е число. Необходимо подготовить отчет");
         }
-        System.out.println();
         // Задание 8
         System.out.println("Задание 8");
-        int amount = 29000;
-        int sum = 0;
-        for (int month = 1; month <= 12; month = month + 1) {
-            sum = amount * month;
-            System.out.println("Месяц " + month + " ,сумма накоплений равна " + sum + " рублей");
-        }
-        // Задание 9
-        System.out.println("Задание 9");
-        int amount1 = 29000;
-        int sum1 = 0;
-        double percent = 0.01;
-        for (int month1 = 1; month1 <= 12; month1 = month1 + 1) {
-            sum1 = (int) ((amount1 * month1) * (1 + percent));
-            System.out.println("Месяц " + month1 + " ,сумма накоплений равна " + sum1 + " рублей");
-        }
-        // Задание 10
-        System.out.println("Задание 10");
-        for (int multiplication = 2; multiplication <= 10; multiplication = multiplication + 1) {
-            System.out.println("2 * " + multiplication + " = " + 2  * multiplication);
+        int period = 79;
+        int initialPeriod = 0;
+        int start = currentYear - 200;
+        int end = currentYear + 100;
+        for (int year = initialPeriod; year < end; year += period) {
+            if (year > start) {
+                System.out.println(year);
+            }
         }
     }
 }
