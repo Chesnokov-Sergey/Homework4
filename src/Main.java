@@ -47,7 +47,7 @@ public class Main {
             System.out.println("Месяц " + month3 + " ,сумма накоплений равна " + sum4 + " рублей");
         }
         // Задание 5
-
+        System.out.println("Задание 5");
         int savings2 = 12_000_000;
         int amount5 = 15_000;
         int sum5 = amount5;
