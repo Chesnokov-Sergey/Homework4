@@ -4,13 +4,13 @@ public class Main {
         // Задача 1
         System.out.println("Задание 1");
         int savings = 2_459_000;
-        int amount3 = 15_000;
-        int sum3 = 0;
-        int month2 = 0;
-        while (sum3 <= savings) {
-            month2 = month2 + 1;
-            sum3 = amount3 * month2;
-            System.out.println("Месяц " + month2 + " ,сумма накоплений равна " + sum3 + " рублей");
+        int amount = 15_000;
+        int sum = 0;
+        int month = 0;
+        while (sum <= savings) {
+            month = month + 1;
+            sum = amount * month;
+            System.out.println("Месяц " + month + " ,сумма накоплений равна " + sum + " рублей");
         }
         // Задание 2
         System.out.println("Задание 2");
@@ -27,51 +27,51 @@ public class Main {
         // Задание 3
         System.out.println("Задание 3");
         int population = 12_000_000;
-        int onethousandBirths = 17;
-        int mortalityperThousand = 8;
+        int births = 17;
+        int mortal = 8;
         int currentYear = 2024;
-        for (int yaer = currentYear; yaer < currentYear + 10; yaer++) {
-            population += population * onethousandBirths / 1_000 - population * mortalityperThousand / 1_000;
-            System.out.println("Год " + yaer + ", численность населения составляет " + population);
+        for (int year = currentYear; year < currentYear + 10; year++) {
+            population += population * births / 1_000 - population * mortal / 1_000;
+            System.out.println("Год " + year + ", численность населения составляет " + population);
         }
         // Задание 4
         System.out.println("Задание 4");
-        int savings1 = 12_000_000;
-        int amount4 = 15_000;
-        int sum4 = amount4;
-        int month3 = 0;
+        int accruals = 12_000_000;
+        amount = 15_000;
+        sum = amount;
+        month = 0;
         double percent1 = 0.07;
-        while (sum4 <= savings1) {
-            sum4 = (int) (sum4 * (1 + percent1));
-            month3++;
-            System.out.println("Месяц " + month3 + " ,сумма накоплений равна " + sum4 + " рублей");
+        while (sum <= accruals) {
+            sum = (int) (sum * (1 + percent1));
+            month++;
+            System.out.println("Месяц " + month + " ,сумма накоплений равна " + sum + " рублей");
         }
         // Задание 5
         System.out.println("Задание 5");
-        int savings2 = 12_000_000;
-        int amount5 = 15_000;
-        int sum5 = amount5;
-        int month4 = 0;
-        double percent2 = 0.07;
-        while (sum5 <= savings2) {
-            sum5 = (int) (sum5 * (1 + percent2));
-            month4 = month4 + 1;
-            if (month4 % 6 == 0) {
-                System.out.println("Месяц " + month4 + " ,сумма накоплений равна " + sum5 + " рублей");
+        accruals = 12_000_000;
+        amount = 15_000;
+        sum = amount;
+        month = 0;
+        double interestRate = 0.07;
+        while (sum <= accruals) {
+            sum = (int) (sum * (1 + interestRate));
+            month = month + 1;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + " ,сумма накоплений равна " + sum + " рублей");
             }
         }
         // Задание 6
         System.out.println("Задание 6");
-        amount5 = 15_000;
-        sum5 = amount5;
-        month4 = 0;
+        amount = 15_000;
+        sum = amount;
+        month = 0;
         int months = 12 * 9;
-        percent2 = 0.07;
-        while (month4 <= months) {
-            sum5 = (int) (sum5 * (1 + percent2));
-            month4++;
-            if (month4 % 6 == 0) {
-                System.out.println("Месяц " + month4 + " ,сумма накоплений равна " + sum5 + " рублей");
+        interestRate = 0.07;
+        while (month <= months) {
+            sum = (int) (sum * (1 + interestRate));
+            month++;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + " ,сумма накоплений равна " + sum + " рублей");
             }
         }
         // Задание 7
