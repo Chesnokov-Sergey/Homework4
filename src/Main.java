@@ -62,10 +62,11 @@ public class Main {
             sum1 = (int) ((amount1 * month1) * (1 + percent));
             System.out.println("Месяц " + month1 + " ,сумма накоплений равна " + sum1 + " рублей");
         }
-        // Задание 10
+                // Задание 10
         System.out.println("Задание 10");
         for (int multiplication = 2; multiplication <= 10; multiplication = multiplication + 1) {
             System.out.println("2 * " + multiplication + " = " + 2  * multiplication);
         }
+
     }
 }
