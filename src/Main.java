@@ -8,6 +8,7 @@ public class Main {
             System.out.print(i + " ");
         }
         System.out.println();
+
         // Задание 2
         System.out.println("Задание 2");
         for (int i = 10; i >= 1; i = i - 1) {
@@ -20,6 +21,7 @@ public class Main {
             if (i % 2 == 0)
                 System.out.print(i + " ");
         }
+        System.out.println();
         // Задание 4
         System.out.println("Задание 4");
         for (int i = 10; i >= -10; i = i - 1) {
