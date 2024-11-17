@@ -8,6 +8,7 @@ public class Main {
             System.out.print(i + " ");
         }
         System.out.println();
+
         // Задание 2
         System.out.println("Задание 2");
         for (int i = 10; i >= 1; i = i - 1) {
